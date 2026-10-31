@@ -49,3 +49,7 @@ Client side: `src/api/auth.js` wraps `createAuthClient` (`useSession`, `signIn`,
 ## Deploy
 
 See `README.md`. Render needs `npm install --include=dev` for the build step because Vite is a devDependency (`render.yaml` does this).
+
+## Production
+
+Live at https://sweet-crumbs-itwx.onrender.com (Render service `srv-dbj11n5g1s2s73eg1hog`, workspace "My Workspace", free plan, region ohio; repo https://github.com/manishsant1/Sweet_crumbs, auto-deploys on push to `main`). It uses the same Neon database as local development. The first request after idle can take 10-30 s (Render sleeps, Neon suspends).
